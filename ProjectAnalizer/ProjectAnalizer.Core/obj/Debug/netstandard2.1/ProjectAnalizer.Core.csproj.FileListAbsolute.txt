@@ -1,0 +1,10 @@
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\bin\Debug\netstandard2.1\ProjectAnalizer.Core.deps.json
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\bin\Debug\netstandard2.1\ProjectAnalizer.Core.dll
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\bin\Debug\netstandard2.1\ProjectAnalizer.Core.pdb
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\obj\Debug\netstandard2.1\ProjectAnalizer.Core.csproj.AssemblyReference.cache
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\obj\Debug\netstandard2.1\ProjectAnalizer.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\obj\Debug\netstandard2.1\ProjectAnalizer.Core.AssemblyInfoInputs.cache
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\obj\Debug\netstandard2.1\ProjectAnalizer.Core.AssemblyInfo.cs
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\obj\Debug\netstandard2.1\ProjectAnalizer.Core.csproj.CoreCompileInputs.cache
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\obj\Debug\netstandard2.1\ProjectAnalizer.Core.dll
+C:\Users\Daniil\source\repos\ProjectAnalizer\ProjectAnalizer.Core\obj\Debug\netstandard2.1\ProjectAnalizer.Core.pdb
