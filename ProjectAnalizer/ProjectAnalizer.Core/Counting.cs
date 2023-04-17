@@ -6,16 +6,13 @@ namespace ProjectAnalizer.Core
 {
     public class Counting
     {
-        public int countClasses = 0;
-        public int countInterfaces = 0;
-        public int countEnums = 0;
-
-        public void Watch()
+        public int countClasses { get; set; } = 0;
+        public int countInterfaces { get; set; } = 0;
+        public int countEnums { get; set; } = 0;
+        public int countFilesAndDirectories { get; set; }
+        public Counting(int countFilesAndDirectories)
         {
-            Console.WriteLine($"Количество классов: {countClasses}");
-            Console.WriteLine($"Количество интерфейсов: {countInterfaces}");
-            Console.WriteLine($"Количество enums: {countEnums}");
-            Console.ReadKey(); 
+            this.countFilesAndDirectories = countFilesAndDirectories;
         }
 
         public void pathView(string path)
