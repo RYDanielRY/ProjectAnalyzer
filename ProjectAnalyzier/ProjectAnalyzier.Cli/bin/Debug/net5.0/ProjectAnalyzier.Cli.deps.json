@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ProjectAnalyzier.Cli/1.0.0": {
+        "dependencies": {
+          "ProjectAnalyzier.Core": "1.0.0"
+        },
+        "runtime": {
+          "ProjectAnalyzier.Cli.dll": {}
+        }
+      },
+      "ProjectAnalyzier.Core/1.0.0": {
+        "runtime": {
+          "ProjectAnalyzier.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjectAnalyzier.Cli/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectAnalyzier.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

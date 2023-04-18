@@ -1,0 +1,10 @@
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\bin\Debug\netstandard2.1\ProjectAnalyzier.Core.deps.json
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\bin\Debug\netstandard2.1\ProjectAnalyzier.Core.dll
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\bin\Debug\netstandard2.1\ProjectAnalyzier.Core.pdb
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\obj\Debug\netstandard2.1\ProjectAnalyzier.Core.csproj.AssemblyReference.cache
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\obj\Debug\netstandard2.1\ProjectAnalyzier.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\obj\Debug\netstandard2.1\ProjectAnalyzier.Core.AssemblyInfoInputs.cache
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\obj\Debug\netstandard2.1\ProjectAnalyzier.Core.AssemblyInfo.cs
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\obj\Debug\netstandard2.1\ProjectAnalyzier.Core.csproj.CoreCompileInputs.cache
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\obj\Debug\netstandard2.1\ProjectAnalyzier.Core.dll
+C:\Users\Daniil\source\repos\ProjectAnalyzier\ProjectAnalyzier.Core\obj\Debug\netstandard2.1\ProjectAnalyzier.Core.pdb

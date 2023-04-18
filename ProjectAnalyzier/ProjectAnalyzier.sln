@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAnalyzier.Cli", "ProjectAnalyzier.Cli\ProjectAnalyzier.Cli.csproj", "{43C41439-ECD9-4DE0-9D72-9DF75E3612B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAnalyzier.Core", "ProjectAnalyzier.Core\ProjectAnalyzier.Core.csproj", "{91AF40E0-9631-4403-8FFB-0AFF4E36DCDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C41439-ECD9-4DE0-9D72-9DF75E3612B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C41439-ECD9-4DE0-9D72-9DF75E3612B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C41439-ECD9-4DE0-9D72-9DF75E3612B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C41439-ECD9-4DE0-9D72-9DF75E3612B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AF40E0-9631-4403-8FFB-0AFF4E36DCDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AF40E0-9631-4403-8FFB-0AFF4E36DCDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AF40E0-9631-4403-8FFB-0AFF4E36DCDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AF40E0-9631-4403-8FFB-0AFF4E36DCDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E638786D-E2EA-4DE3-8D1F-47E384B6A3A9}
+	EndGlobalSection
+EndGlobal
