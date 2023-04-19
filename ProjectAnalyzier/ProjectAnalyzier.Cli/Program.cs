@@ -23,8 +23,10 @@ namespace ProjectAnalyzier.Cli
                 else
                 {
                     var userPath = standartPath;
-                    ValidateString validateString = new ValidateString(userPath);
-                    validateString.OnValidate();
+                    Counting counting = new Counting(userPath);
+                    counting.pathView();
+                    WatchingData watchingData = new WatchingData();
+                    watchingData.OnWatch(counting);
                 }
                 return;
             }
@@ -34,8 +36,10 @@ namespace ProjectAnalyzier.Cli
                 {
                     case "-dir" when args.Length == 2:
                         var userPath = args[1];
-                        ValidateString validateString = new ValidateString(userPath);
-                        validateString.OnValidate();
+                        Counting counting = new Counting(userPath);
+                        counting.pathView();
+                        WatchingData watchingData = new WatchingData();
+                        watchingData.OnWatch(counting);
                         break;
                 }
             }
