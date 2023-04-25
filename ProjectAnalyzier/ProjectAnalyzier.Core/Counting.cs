@@ -26,22 +26,7 @@ namespace ProjectAnalyzier.Core
 
         public void pathView()
         {
-            var allfolders = Directory.GetDirectories(path);
-            var allfile = Directory.GetFiles(path);
-
-
-            foreach (var folder in allfolders)
-            {
-                pathView(folder);
-            }
-
-            foreach (var file in allfile)
-            {
-                if (file.Contains(".cs") && !file.Contains(".csproj"))
-                {
-                    countObject(file);
-                }
-            }
+            pathView(path);
         }
 
         private void pathView(string path)
