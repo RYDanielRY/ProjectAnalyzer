@@ -24,7 +24,7 @@ namespace ProjectAnalyzier.Cli
                 {
                     var userPath = standartPath;
                     Counting counting = new Counting(userPath);
-                    counting.pathView();
+                    counting.Analize();
                     WatchingData watchingData = new WatchingData();
                     watchingData.OnWatch(counting);
                 }
@@ -37,7 +37,7 @@ namespace ProjectAnalyzier.Cli
                     case "-dir" when args.Length == 2:
                         var userPath = args[1];
                         Counting counting = new Counting(userPath);
-                        counting.pathView();
+                        counting.Analize();
                         WatchingData watchingData = new WatchingData();
                         watchingData.OnWatch(counting);
                         break;

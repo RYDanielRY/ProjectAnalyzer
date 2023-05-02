@@ -8,12 +8,13 @@ namespace ProjectAnalyzier.Core
     {
         public void OnWatch(Counting counting)
         {
-            if (counting.countFilesAndDirectories > 0)
+            if (counting.IsFilesAndDirectoriesExist)
             {
-                Console.WriteLine($"Количество классов: {counting.countClasses}");
-                Console.WriteLine($"Количество интерфейсов: {counting.countInterfaces}");
-                Console.WriteLine($"Количество enums: {counting.countEnums}");
-                Console.WriteLine($"Количество файлов и папок: {counting.countFilesAndDirectories}");
+                Console.WriteLine($"Количество классов: {counting.Classes}");
+                Console.WriteLine($"Количество интерфейсов: {counting.Interfaces}");
+                Console.WriteLine($"Количество enums: {counting.Enums}");
+                Console.WriteLine($"Количество файлов: {counting.Files}");
+                Console.WriteLine($"Количество папок: {counting.Directories}");
             }
             else
             {

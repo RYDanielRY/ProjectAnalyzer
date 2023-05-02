@@ -6,67 +6,111 @@ namespace ProjectAnalyzier.Core
 {
     public class Counting
     {
-        public int countClasses { get; set; } = 0;
-        public int countInterfaces { get; set; } = 0;
-        public int countEnums { get; set; } = 0;
-        public int countFilesAndDirectories
+        private string _path = "";
+        private int _classes = 0;
+        private int _interfaces = 0;
+        private int _enums = 0;
+        private int _files = 0;
+        private int _directorys = 0;
+
+        public Counting(string path)
+        {
+            this._path = path;
+        }
+
+        public int Classes
         {
             get
             {
-                return Directory.GetFiles(path, "*", SearchOption.AllDirectories).Length;
+                return _classes;
             }
-
         }
 
-        private string path = "";
-        public Counting(string path)
+        public int Interfaces
         {
-            this.path = path;
+            get
+            {
+                return _interfaces;
+            }
         }
 
-        public void pathView()
+        public int Enums
         {
-            pathView(path);
+            get
+            {
+                return _enums;
+            }
         }
 
-        private void pathView(string path)
+        public int Directories
+        {
+            get
+            {
+                return _directorys;
+            }
+        }
+
+        public int Files
+        {
+            get
+            {
+                return _files;
+            }
+        }
+
+        public bool IsFilesAndDirectoriesExist
+        {
+            get
+            {
+                return Directory.GetFiles(_path, "*", SearchOption.AllDirectories).Length > 0;
+            }
+        }
+
+        public void Analize()
+        {
+            Analize(_path);
+        }
+
+        private void Analize(string path)
         {
             var allfolders = Directory.GetDirectories(path);
             var allfile = Directory.GetFiles(path);
 
             foreach (var folder in allfolders)
             {
-                pathView(folder);
+                _directorys++;
+                Analize(folder);
             }
 
             foreach (var file in allfile)
             {
+                _files++;
                 if (file.Contains(".cs") && !file.Contains(".csproj"))
                 {
-                    countObject(file);
+                    ProcessPath(file);
                 }
             }
         }
 
-        public void countObject(string path)
+        private void ProcessPath(string path)
         {
             string toSeOne = File.ReadAllText(path);
             string pattern = @"(private|private protected|protected|internal|protected internal|public|partial|^|\s)\sclass\s";
             MatchCollection matches = (Regex.Matches(toSeOne, pattern));
             var thisCountClass = matches.Count;
-            countClasses += thisCountClass;
+            _classes += thisCountClass;
 
             string toSeeInterface = File.ReadAllText(path);
             string patternInterface = @"(public|^|\s)\sinterface\s";
             MatchCollection matchesInterface = (Regex.Matches(toSeeInterface, patternInterface));
             var thisCountInterface = matchesInterface.Count;
-            countInterfaces += thisCountInterface;
+            _interfaces += thisCountInterface;
 
             string toSeeEnum = File.ReadAllText(path);
             string patternEnum = @"(public|private|^|\s)\senum\s";
             MatchCollection matchesEnum = (Regex.Matches(toSeeEnum, patternEnum));
             var thisCountEnums = matchesEnum.Count;
-            countEnums += thisCountEnums;
+            _enums += thisCountEnums;
         }
     }
 }
